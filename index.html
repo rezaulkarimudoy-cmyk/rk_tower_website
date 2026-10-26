@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RK TOWER | Flats for Rent in Bhairab</title>
+  <meta name="description" content="RK TOWER, পুকুরপাড় রোড, নিউটাউন, ভৈরবে ফ্ল্যাট ভাড়া। ৩ বেডরুম, লিফট, গাড়ি পার্কিং ও নিরাপদ পরিবেশ।">
+  <meta name="theme-color" content="#102b46">
+
+  <style>
+    :root {
+      --navy: #102b46;
+      --blue: #174d70;
+      --gold: #d9ad60;
+      --cream: #f7f5f0;
+      --white: #ffffff;
+      --text: #263547;
+      --muted: #6d7b89;
+      --green: #16834a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans Bengali", "Segoe UI", Arial, sans-serif;
+      background: #fff;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    header {
+      background: var(--navy);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 18px #0002;
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 45px;
+      height: 45px;
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      font-size: 21px;
+      font-weight: 900;
+      border-radius: 10px;
+    }
+
+    .brand h1 {
+      font-size: 21px;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 11px;
+      color: #d8e2ec;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-call {
+      background: var(--gold);
+      color: var(--navy);
+      padding: 10px 17px;
+      border-radius: 7px;
+      font-weight: 800;
+    }
+
+    /* Hero cover */
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 80% 20%, #ffffff15, transparent 40%),
+        linear-gradient(120deg, #102b46, #174d70);
+      color: white;
+      padding: 76px 0;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      border: 1px solid #d9ad6070;
+      border-radius: 50px;
+      padding: 6px 14px;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .hero h2 {
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      color: #e1e9f1;
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 19px;
+      border-radius: 8px;
+      font-weight: 800;
+      transition: 0.2s;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-outline {
+      border-color: #ffffff80;
+      color: white;
+    }
+
+    .hero-photo {
+      height: 360px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid #ffffff30;
+      background:
+        linear-gradient(145deg, #345d79, #102b46);
+      box-shadow: 0 24px 60px #0003;
+    }
+
+    .hero-photo img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .photo-placeholder .symbol {
+      font-size: 58px;
+    }
+
+    .photo-placeholder small {
+      color: #dbe7f0;
+    }
+
+    /* Quick facts */
+
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 12px 38px #102b4610;
+      margin-top: -28px;
+      position: relative;
+      z-index: 2;
+      padding: 24px 10px;
+    }
+
+    .fact {
+      text-align: center;
+      padding: 8px;
+      border-right: 1px solid #e8edf1;
+    }
+
+    .fact:last-child {
+      border: 0;
+    }
+
+    .fact strong {
+      display: block;
+      color: var(--navy);
+      font-size: 24px;
+    }
+
+    .fact span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Sections */
+
+    section.content-section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--blue);
+      border-color: #174d7030;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: clamp(27px, 4vw, 38px);
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* Flat cards */
+
+    .flat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 23px;
+    }
+
+    .flat-card {
+      border: 1px solid #e5eaf0;
+      border-radius: 15px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 8px 28px #102b4608;
+      transition: 0.25s;
+    }
+
+    .flat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px #102b4615;
+    }
+
+    .flat-photo {
+      height: 190px;
+      position: relative;
+      background: linear-gradient(135deg, #dce6ed, #9fb5c5);
+      overflow: hidden;
+    }
+
+    .flat-photo img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .flat-photo .photo-placeholder {
+      color: var(--navy);
+    }
+
+    .flat-photo .photo-placeholder small {
+      color: #344d60;
+    }
+
+    .floor-badge {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      background: white;
+      color: var(--navy);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    .flat-body {
+      padding: 22px;
+    }
+
+    .flat-body h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .rent {
+      color: var(--blue);
+      font-size: 25px;
+      font-weight: 900;
+      margin: 8px 0;
+    }
+
+    .rent small {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .flat-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 15px 0 20px;
+    }
+
+    .flat-details span {
+      background: #f0f4f7;
+      color: #425669;
+      border-radius: 5px;
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+
+    .flat-card .btn {
+      width: 100%;
+    }
+
+    /* Facilities */
+
+    .facilities-section {
+      background: var(--cream);
+    }
+
+    .facility-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .facility {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      border: 1px solid #ebe9e3;
+    }
+
+    .facility-icon {
+      width: 47px;
+      height: 47px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #f5eddd;
+      font-size: 24px;
+    }
+
+    .facility h3 {
+      font-size: 16px;
+      color: var(--navy);
+    }
+
+    .facility p {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .about-panel {
+      background: var(--navy);
+      border-radius: 16px;
+      min-height: 290px;
+      padding: 35px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-panel h3 {
+      color: var(--gold);
+      font-size: 27px;
+      margin-bottom: 14px;
+    }
+
+    .about-copy h2 {
+      color: var(--navy);
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    /* Contact */
+
+    .contact-section {
+      background: var(--navy);
+      color: white;
+    }
+
+    .contact-section .section-heading h2 {
+      color: white;
+    }
+
+    .contact-section .section-heading p {
+      color: #cfdae4;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      padding: 28px;
+      border-radius: 13px;
+      background: #ffffff0d;
+      border: 1px solid #ffffff25;
+    }
+
+    .contact-card h3 {
+      color: var(--gold);
+      font-size: 21px;
+      margin-bottom: 18px;
+    }
+
+    .contact-line {
+      padding: 12px 0;
+      border-bottom: 1px solid #ffffff20;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-line:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-line strong {
+      display: block;
+      font-size: 12px;
+      color: #c7d4df;
+      margin-bottom: 4px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn-green {
+      background: #20a85a;
+      color: white;
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--navy);
+    }
+
+    /* Footer */
+
+    footer {
+      background: #0a1e31;
+      color: #c7d3df;
+      padding: 25px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: var(--gold);
+    }
+
+    .footer-address {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 850px) {
+      nav {
+        gap: 12px;
+      }
+
+      nav a:not(.nav-call) {
+        display: none;
+      }
+
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      .hero-photo {
+        height: 300px;
+      }
+
+      .flat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .navbar {
+        min-height: 68px;
+      }
+
+      .brand h1 {
+        font-size: 18px;
+      }
+
+      .nav-call {
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+
+      .hero h2 {
+        font-size: 35px;
+      }
+
+      .quick-facts {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px 5px;
+      }
+
+      .fact:nth-child(2) {
+        border-right: 0;
+      }
+
+      .fact:nth-child(-n+2) {
+        border-bottom: 1px solid #e8edf1;
+      }
+
+      section.content-section {
+        padding: 58px 0;
+      }
+
+      .flat-grid,
+      .facility-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-photo {
+        height: 240px;
+      }
+
+      .about-panel {
+        padding: 25px;
+      }
+
+      .contact-card {
+        padding: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#home" aria-label="RK TOWER Home">
+        <div class="brand-mark">RK</div>
+        <div>
+          <h1>RK TOWER</h1>
+          <small>FLATS FOR RENT</small>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#home">হোম</a>
+        <a href="#flats">ফ্ল্যাট</a>
+        <a href="#facilities">সুবিধা</a>
+        <a href="#contact">যোগাযোগ</a>
+        <a class="nav-call" href="tel:+8801608113963">কল করুন</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero / Cover Photo -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">আপনার নতুন ঠিকানা</span>
+
+          <h2>
+            আপনার পরিবারের জন্য<br>
+            <span>আরামদায়ক বাসস্থান</span>
+          </h2>
+
+          <p>
+            RK TOWER-এ রয়েছে ৩ বেডরুমের ফ্ল্যাট।
+            লিফট, গাড়ি পার্কিং, সিসিটিভি ও সার্বক্ষণিক পানির সুবিধাসহ
+            আপনার পরিবারের জন্য একটি নিরাপদ আবাসন।
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#flats" class="btn btn-gold">ফ্ল্যাট দেখুন</a>
+            <a href="https://wa.me/8801608113963?text=Assalamu%20Alaikum%2C%20RK%20TOWER%20er%20flat%20rent%20somproke%20jante%20chai."
+               class="btn btn-outline" target="_blank" rel="noopener">
+              WhatsApp করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-placeholder">
+            <div class="symbol">🏢</div>
+            <strong>RK TOWER — Cover Photo</strong>
+            <small>RK TOWER COVER PHOTO</small>
+          </div>
+          <img src="images/front cover.jpeg"
+               alt="RK TOWER Building"
+               onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <div class="container">
+      <div class="quick-facts">
+        <div class="fact">
+          <strong>৭ তলা</strong>
+          <span>বিল্ডিং</span>
+        </div>
+        <div class="fact">
+          <strong>৩</strong>
+          <span>বেডরুম</span>
+        </div>
+        <div class="fact">
+          <strong>৳১০,৫০০</strong>
+          <span>থেকে শুরু মাসিক ভাড়া</span>
+        </div>
+        <div class="fact">
+          <strong>লিফট</strong>
+          <span>সুবিধা রয়েছে</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flat Cards -->
+    <section class="content-section" id="flats">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">AVAILABLE FLATS</span>
+          <h2>আপনার পছন্দের ফ্ল্যাট বেছে নিন</h2>
+          <p>
+            সব তলায় ফ্ল্যাট খালি আছে।
+            যোগাযোগ করে বর্তমান প্রাপ্যতা নিশ্চিত করুন।
+          </p>
+        </div>
+
+        <div class="flat-grid">
+
+          <!-- Floor 1 -->
+          <article class="flat-card">
+            <div class="flat-photo">
+              <span class="floor-badge">১ম তলা</span>
+              <div class="photo-placeholder">
+                <div class="symbol">🏠</div>
+                <small>ফ্ল্যাটের ছবি পরে যোগ হবে</small>
+              </div>
+              <img src="images/Rooms.png.jpeg" alt="First Floor Flat"
+                   onerror="this.style.display='none'">
+            </div>
+            <div class="flat-body">
+              <h3>১ম তলার ফ্ল্যাট</h3>
+              <div class="rent">৳১০,৫০০ <small>/ মাস</small></div>
+              <div class="flat-details">
+                <span>3 badroom</span>
+                <span>2 Washroom</span>
+                <span>1 Dining</span>
+                <span>1 kitchen</span>
+              </div>
+              <a class="btn btn-gold" href="https://wa.me/8801608113963?text=RK%20TOWER%20er%201st%20floor%20flat%20somproke%20jante%20chai."
+                 target="_blank" rel="noopener">ফ্ল্যাটের জন্য যোগাযোগ</a>
+            </div>
+          </article>
+
+          <!-- Floor 2 -->
+          <article class="flat-card">
+            <div class="flat-photo">
+              <span class="floor-badge">২য় তলা</span>
+              <div class="photo-placeholder">
+                <div class="symbol">🏠</div>
+                <small>ফ্ল্যাটের ছবি পরে যোগ হবে</small>
+              </div>
+              <img src="images/Rooms.png.jpeg" alt="Second Floor Flat"
+                   onerror="this.style.display='none'">
+            </div>
+            <div class="flat-body">
+              <h3>২য় তলার ফ্ল্যাট</h3>
+              <div class="rent">৳১০,৫০০ <small>/ মাস</small></div>
+              <div class="flat-details">
+                <span>3 badroom</span>
+                <span>2 Washroom</span>
+                <span>1 Dining</span>
+                <span>1 kitchen</span>
+              </div>
+              <a class="btn btn-gold" href="https://wa.me/8801608113963?text=RK%20TOWER%20er%202nd%20floor%20flat%20somproke%20jante%20chai."
+                 target="_blank" rel="noopener">ফ্ল্যাটের জন্য যোগাযোগ</a>
+            </div>
+          </article>
+
+          <!-- Floor 3 -->
+          <article class="flat-card">
+            <div class="flat-photo">
+              <span class="floor-badge">৩য় তলা</span>
+              <div class="photo-placeholder">
+                <div class="symbol">🏠</div>
+                <small>ফ্ল্যাটের ছবি পরে যোগ হবে</small>
+              </div>
+              <img src="images/3rd floor.jpeg" alt="Third Floor Flat"
+                   onerror="this.style.display='none'">
+            </div>
+            <div class="flat-body">
+              <h3>৩য় তলার ফ্ল্যাট</h3>
+              <div class="rent">৳২৫,৫০০ <small>/ মাস</small></div>
+              <div class="flat-details">
+                <span>4 badroom</span>
+                <span>4 Washroom</span>
+                <span>1 Kitcher</span>
+                <span>1 Dining</span>
+                <span>1 Living</span>
+                <span>Interior Design</span>
+                <span>1800 Square Fit</span>
+              </div>
+              <a class="btn btn-gold" href="https://wa.me/8801608113963?text=RK%20TOWER%20er%203rd%20floor%20flat%20somproke%20jante%20chai."
+                 target="_blank" rel="noopener">ফ্ল্যাটের জন্য যোগাযোগ</a>
+            </div>
+          </article>
+
+          <!-- Floor 4 -->
+          <article class="flat-card">
+            <div class="flat-photo">
+              <span class="floor-badge">৪র্থ তলা</span>
+              <div class="photo-placeholder">
+                <div class="symbol">🏠</div>
+                <small>ফ্ল্যাটের ছবি পরে যোগ হবে</small>
+              </div>
+              <img src="images/Rooms.png.jpeg" alt="Fourth Floor Flat"
+                   onerror="this.style.display='none'">
+            </div>
+            <div class="flat-body">
+              <h3>৪র্থ তলার ফ্ল্যাট</h3>
+              <div class="rent">৳১০,৫০০ <small>/ মাস</small></div>
+              <div class="flat-details">
+                <span>3 badroom</span>
+                <span>2 Washroom</span>
+                <span>1 Dining</span>
+                <span>1 kitchen</span>
+              </div>
+              <a class="btn btn-gold" href="https://wa.me/8801608113963?text=RK%20TOWER%20er%204th%20floor%20flat%20somproke%20jante%20chai."
+                 target="_blank" rel="noopener">ফ্ল্যাটের জন্য যোগাযোগ</a>
+            </div>
+          </article>
+
+          <!-- Floor 5 -->
+          <article class="flat-card">
+            <div class="flat-photo">
+              <span class="floor-badge">৫ম তলা</span>
+              <div class="photo-placeholder">
+                <div class="symbol">🏠</div>
+                <small>ফ্ল্যাটের ছবি পরে যোগ হবে</small>
+              </div>
+              <img src="images/Rooms.png.jpeg" alt="Fifth Floor Flat"
+                   onerror="this.style.display='none'">
+            </div>
+            <div class="flat-body">
+              <h3>৫ম তলার ফ্ল্যাট</h3>
+              <div class="rent">৳১১,০০০ <small>/ মাস</small></div>
+              <div class="flat-details">
+                <span>3 badroom</span>
+                <span>2 Washroom</span>
+                <span>1 Dining</span>
+                <span>1 kitchen</span>
+              </div>
+              <a class="btn btn-gold" href="https://wa.me/8801608113963?text=RK%20TOWER%20er%205th%20floor%20flat%20somproke%20jante%20chai."
+                 target="_blank" rel="noopener">ফ্ল্যাটের জন্য যোগাযোগ</a>
+            </div>
+          </article>
+
+          <!-- Floor 6 -->
+          <article class="flat-card">
+            <div class="flat-photo">
+              <span class="floor-badge">৬ষ্ঠ তলা</span>
+              <div class="photo-placeholder">
+                <div class="symbol">🏠</div>
+                <small>ফ্ল্যাটের ছবি পরে যোগ হবে</small>
+              </div>
+              <img src="images/Rooms.png.jpeg" alt="Sixth Floor Flat"
+                   onerror="this.style.display='none'">
+            </div>
+            <div class="flat-body">
+              <h3>৬ষ্ঠ তলার ফ্ল্যাট</h3>
+              <div class="rent">৳১১,০০০ <small>/ মাস</small></div>
+              <div class="flat-details">
+                <span>3 badroom</span>
+                <span>2 Washroom</span>
+                <span>1 Dining</span>
+                <span>1 kitchen</span>
+              </div>
+              <a class="btn btn-gold" href="https://wa.me/8801608113963?text=RK%20TOWER%20er%206th%20floor%20flat%20somproke%20jante%20chai."
+                 target="_blank" rel="noopener">ফ্ল্যাটের জন্য যোগাযোগ</a>
+            </div>
+          </article>
+
+          <!-- Floor 7 -->
+          <article class="flat-card">
+            <div class="flat-photo">
+              <span class="floor-badge">৭ম তলা</span>
+              <div class="photo-placeholder">
+                <div class="symbol">🏠</div>
+                <small>ফ্ল্যাটের ছবি পরে যোগ হবে</small>
+              </div>
+              <img src="images/Rooms.png.jpeg" alt="Seventh Floor Flat"
+                   onerror="this.style.display='none'">
+            </div>
+            <div class="flat-body">
+              <h3>৭ম তলার ফ্ল্যাট</h3>
+              <div class="rent">৳১১,০০০ <small>/ মাস</small></div>
+              <div class="flat-details">
+                <span>3 badroom</span>
+                <span>2 Washroom</span>
+                <span>1 Dining</span>
+                <span>1 kitchen</span>
+              </div>
+              <a class="btn btn-gold" href="https://wa.me/8801608113963?text=RK%20TOWER%20er%207th%20floor%20flat%20somproke%20jante%20chai."
+                 target="_blank" rel="noopener">ফ্ল্যাটের জন্য যোগাযোগ</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="content-section facilities-section" id="facilities">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">OUR FACILITIES</span>
+          <h2>RK TOWER-এর সুযোগ-সুবিধা</h2>
+          <p>পরিবারের স্বাচ্ছন্দ্য ও নিরাপত্তার কথা মাথায় রেখে।</p>
+        </div>
+
+        <div class="facility-grid">
+          <div class="facility">
+            <div class="facility-icon">🛗</div>
+            <div>
+              <h3>লিফট</h3>
+              <p>ভবনে লিফটের সুবিধা</p>
+            </div>
+          </div>
+
+          <div class="facility">
+            <div class="facility-icon">🚗</div>
+            <div>
+              <h3>গাড়ি পার্কিং</h3>
+              <p>গাড়ি রাখার সুবিধা</p>
+            </div>
+          </div>
+
+          <div class="facility">
+            <div class="facility-icon">📹</div>
+            <div>
+              <h3>সিসিটিভি</h3>
+              <p>নিরাপত্তার জন্য CCTV</p>
+            </div>
+          </div>
+
+          <div class="facility">
+            <div class="facility-icon">💧</div>
+            <div>
+              <h3>সার্বক্ষণিক পানি</h3>
+              <p>পানির সুবিধা</p>
+            </div>
+          </div>
+
+          <div class="facility">
+            <div class="facility-icon">🌿</div>
+            <div>
+              <h3>বারান্দা</h3>
+              <p>ফ্ল্যাটে বারান্দার সুবিধা</p>
+            </div>
+          </div>
+
+          <div class="facility">
+            <div class="facility-icon">🛡️</div>
+            <div>
+              <h3>নিরাপদ ভবন</h3>
+              <p>নিরাপদ আবাসনের পরিবেশ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About and Location -->
+    <section class="content-section">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <span class="eyebrow">RK TOWER</span>
+          <h3>আপনার পরিবারের নতুন ঠিকানা</h3>
+          <p>
+            ৩ বেডরুমের ফ্ল্যাট, লিফট, গাড়ি পার্কিং এবং
+            সার্বক্ষণিক পানির সুবিধা। ভাড়া ও ফ্ল্যাটের বিস্তারিত
+            জানতে সরাসরি যোগাযোগ করুন।
+          </p>
+        </div>
+
+        <div class="about-copy">
+          <h2>আমাদের ঠিকানা</h2>
+          <p><strong>বিল্ডিং:</strong> RK TOWER</p>
+          <p><strong>রোড:</strong> পুকুরপাড় রোড</p>
+          <p><strong>এলাকা:</strong> নিউটাউন, ভৈরব</p>
+          <p><strong>অগ্রিম:</strong> ১ মাস</p>
+          <p>
+            <strong>মাসিক ভাড়া:</strong><br>
+            ১ম–৪র্থ তলা: ৳১০,৫০০<br>
+            ৫ম–৭ম তলা: ৳১১,০০০
+          </p>
+          <a href="#contact" class="btn btn-gold">যোগাযোগের তথ্য</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="content-section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">CONTACT US</span>
+          <h2>ফ্ল্যাট ভাড়ার জন্য যোগাযোগ করুন</h2>
+          <p>ফ্ল্যাট দেখতে আসার আগে ফোন করে খালি থাকার বিষয়টি নিশ্চিত করুন।</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>যোগাযোগের তথ্য</h3>
+
+            <div class="contact-line">
+              <strong>বিল্ডিংয়ের নাম</strong>
+              RK TOWER
+            </div>
+
+            <div class="contact-line">
+              <strong>ঠিকানা</strong>
+              পুকুরপাড় রোড, নিউটাউন, ভৈরব
+            </div>
+
+            <div class="contact-line">
+              <strong>মোবাইল</strong>
+              <a href="tel:+8801608113963">01608113963</a>
+            </div>
+
+            <div class="contact-line">
+              <strong>ইমেইল</strong>
+              <a href="mailto:rezaulkarimudoy@gmail.com">
+                rezaulkarimudoy@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn btn-green" href="https://wa.me/8801608113963"
+                 target="_blank" rel="noopener">WhatsApp</a>
+
+              <a class="btn btn-white" href="tel:+8801608113963">
+                এখনই কল করুন
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>ভাড়ার নিয়ম</h3>
+            <div class="contact-line">
+              <strong>অগ্রিম জামানত</strong>
+              ১ মাসের ভাড়া
+            </div>
+            <div class="contact-line">
+              <strong>১ম–৪র্থ তলা</strong>
+              প্রতি মাসে ৳১০,৫০০
+            </div>
+            <div class="contact-line">
+              <strong>৫ম–৭ম তলা</strong>
+              প্রতি মাসে ৳১১,০০০
+            </div>
+            <div class="contact-line">
+              <strong>ফ্ল্যাটের ধরন</strong>
+              3 Bad Room , 2 Washroom , 1 Dining & 1 Kitchen
+            </div>
+            <p style="margin-top:15px;color:#cfdae4;font-size:13px;">
+              ভাড়া, প্রাপ্যতা ও অন্যান্য শর্ত সরাসরি কর্তৃপক্ষের
+              সঙ্গে কথা বলে নিশ্চিত করুন।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <strong>RK TOWER</strong>
+      <p>আপনার পরিবারের জন্য আরামদায়ক বাসস্থান</p>
+      <p class="footer-address">Building Owner Mr. Khokan Mia</p>
+      <p class="footer-address">Design BY Rezaul Karim Udoy</p>
+      <p style="margin-top:10px;">
+        © <span id="year"></span> RK TOWER. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
